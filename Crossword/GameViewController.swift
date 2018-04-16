@@ -10,4 +10,6 @@ import UIKit
 
 class GameViewController: UIViewController {
     
+    @IBAction func KeyboardTouched(_ sender: UIButton) {
+    }
 }
