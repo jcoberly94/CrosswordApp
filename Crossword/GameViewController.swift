@@ -10,6 +10,11 @@ import UIKit
 
 class GameViewController: UIViewController {
     
+    @IBOutlet weak var hintLabel: UILabel!
+    
     @IBAction func KeyboardTouched(_ sender: UIButton) {
+        let letter = UnicodeScalar(UInt8(sender.tag))
+        print("\(letter) button pressed")
     }
+    
 }
