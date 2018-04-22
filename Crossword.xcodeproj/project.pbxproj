@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1CECFC6208D1050006647B5 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CECFC5208D1050006647B5 /* HomeScreenViewController.swift */; };
+		E1CECFC8208D1788006647B5 /* LevelCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CECFC7208D1788006647B5 /* LevelCellCollectionViewCell.swift */; };
+		E1CECFCA208D2A1B006647B5 /* Crosswords.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1CECFC9208D2A1B006647B5 /* Crosswords.plist */; };
+		E1CECFCC208D2AE8006647B5 /* CrosswordLevel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CECFCB208D2AE8006647B5 /* CrosswordLevel1.swift */; };
 		E1D521A92085523500C7C5BB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D521A82085523500C7C5BB /* GameViewController.swift */; };
 		E1F8B79520732AC6007EB119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F8B79420732AC6007EB119 /* AppDelegate.swift */; };
 		E1F8B79720732AC6007EB119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F8B79620732AC6007EB119 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E1CECFC5208D1050006647B5 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		E1CECFC7208D1788006647B5 /* LevelCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1CECFC9208D2A1B006647B5 /* Crosswords.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Crosswords.plist; sourceTree = "<group>"; };
+		E1CECFCB208D2AE8006647B5 /* CrosswordLevel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswordLevel1.swift; sourceTree = "<group>"; };
 		E1D521A82085523500C7C5BB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E1F8B79120732AC5007EB119 /* Crossword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crossword.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F8B79420732AC6007EB119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +74,10 @@
 				E1F8B7A320732AC6007EB119 /* Info.plist */,
 				E1F8B79B20732AC6007EB119 /* Crossword.xcdatamodeld */,
 				E1D521A82085523500C7C5BB /* GameViewController.swift */,
+				E1CECFC5208D1050006647B5 /* HomeScreenViewController.swift */,
+				E1CECFC7208D1788006647B5 /* LevelCellCollectionViewCell.swift */,
+				E1CECFC9208D2A1B006647B5 /* Crosswords.plist */,
+				E1CECFCB208D2AE8006647B5 /* CrosswordLevel1.swift */,
 			);
 			path = Crossword;
 			sourceTree = "<group>";
@@ -132,6 +144,7 @@
 				E1F8B7A220732AC6007EB119 /* LaunchScreen.storyboard in Resources */,
 				E1F8B79F20732AC6007EB119 /* Assets.xcassets in Resources */,
 				E1F8B79A20732AC6007EB119 /* Main.storyboard in Resources */,
+				E1CECFCA208D2A1B006647B5 /* Crosswords.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +158,10 @@
 				E1D521A92085523500C7C5BB /* GameViewController.swift in Sources */,
 				E1F8B79720732AC6007EB119 /* ViewController.swift in Sources */,
 				E1F8B79520732AC6007EB119 /* AppDelegate.swift in Sources */,
+				E1CECFC8208D1788006647B5 /* LevelCellCollectionViewCell.swift in Sources */,
 				E1F8B79D20732AC6007EB119 /* Crossword.xcdatamodeld in Sources */,
+				E1CECFC6208D1050006647B5 /* HomeScreenViewController.swift in Sources */,
+				E1CECFCC208D2AE8006647B5 /* CrosswordLevel1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
