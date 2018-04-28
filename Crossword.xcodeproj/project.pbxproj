@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0E532929451F121A027308A /* Pods_Crossword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0337D3DB7A4FC54D74FD762B /* Pods_Crossword.framework */; };
+		E1006BCB208D9AE40086C579 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1006BCA208D9AE40086C579 /* Word.swift */; };
+		E1597E4B2095097000F17624 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1597E4A2095097000F17624 /* UserData.swift */; };
+		E1597E4D20950A2F00F17624 /* UserData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1597E4C20950A2F00F17624 /* UserData.plist */; };
+		E1BF4C02208ED73000BC76B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1BF4C01208ED72F00BC76B4 /* GoogleService-Info.plist */; };
 		E1CECFC6208D1050006647B5 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CECFC5208D1050006647B5 /* HomeScreenViewController.swift */; };
 		E1CECFC8208D1788006647B5 /* LevelCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CECFC7208D1788006647B5 /* LevelCellCollectionViewCell.swift */; };
-		E1CECFCA208D2A1B006647B5 /* Crosswords.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1CECFC9208D2A1B006647B5 /* Crosswords.plist */; };
-		E1CECFCC208D2AE8006647B5 /* CrosswordLevel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CECFCB208D2AE8006647B5 /* CrosswordLevel1.swift */; };
+		E1CECFCC208D2AE8006647B5 /* CrosswordLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CECFCB208D2AE8006647B5 /* CrosswordLevel.swift */; };
 		E1D521A92085523500C7C5BB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D521A82085523500C7C5BB /* GameViewController.swift */; };
 		E1F8B79520732AC6007EB119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F8B79420732AC6007EB119 /* AppDelegate.swift */; };
-		E1F8B79720732AC6007EB119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F8B79620732AC6007EB119 /* ViewController.swift */; };
 		E1F8B79A20732AC6007EB119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F8B79820732AC6007EB119 /* Main.storyboard */; };
 		E1F8B79D20732AC6007EB119 /* Crossword.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1F8B79B20732AC6007EB119 /* Crossword.xcdatamodeld */; };
 		E1F8B79F20732AC6007EB119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F8B79E20732AC6007EB119 /* Assets.xcassets */; };
@@ -21,14 +24,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0337D3DB7A4FC54D74FD762B /* Pods_Crossword.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crossword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7DC5D31CCCA1534719827C /* Pods-Crossword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crossword.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crossword/Pods-Crossword.debug.xcconfig"; sourceTree = "<group>"; };
+		DDDDC0A5BCD1C3C3C00A12E1 /* Pods-Crossword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crossword.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crossword/Pods-Crossword.release.xcconfig"; sourceTree = "<group>"; };
+		E1006BCA208D9AE40086C579 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		E1597E4A2095097000F17624 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		E1597E4C20950A2F00F17624 /* UserData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserData.plist; sourceTree = "<group>"; };
+		E1BF4C01208ED72F00BC76B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1CECFC5208D1050006647B5 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		E1CECFC7208D1788006647B5 /* LevelCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCellCollectionViewCell.swift; sourceTree = "<group>"; };
-		E1CECFC9208D2A1B006647B5 /* Crosswords.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Crosswords.plist; sourceTree = "<group>"; };
-		E1CECFCB208D2AE8006647B5 /* CrosswordLevel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswordLevel1.swift; sourceTree = "<group>"; };
+		E1CECFCB208D2AE8006647B5 /* CrosswordLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswordLevel.swift; sourceTree = "<group>"; };
 		E1D521A82085523500C7C5BB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E1F8B79120732AC5007EB119 /* Crossword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crossword.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F8B79420732AC6007EB119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1F8B79620732AC6007EB119 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1F8B79920732AC6007EB119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1F8B79C20732AC6007EB119 /* Crossword.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crossword.xcdatamodel; sourceTree = "<group>"; };
 		E1F8B79E20732AC6007EB119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E532929451F121A027308A /* Pods_Crossword.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		688138B2BE2DA94B7B3730F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F7DC5D31CCCA1534719827C /* Pods-Crossword.debug.xcconfig */,
+				DDDDC0A5BCD1C3C3C00A12E1 /* Pods-Crossword.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E051FB8A314CC78DF77BFBC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0337D3DB7A4FC54D74FD762B /* Pods_Crossword.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1F8B78820732AC5007EB119 = {
 			isa = PBXGroup;
 			children = (
 				E1F8B79320732AC6007EB119 /* Crossword */,
 				E1F8B79220732AC5007EB119 /* Products */,
+				688138B2BE2DA94B7B3730F0 /* Pods */,
+				E051FB8A314CC78DF77BFBC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				E1F8B79420732AC6007EB119 /* AppDelegate.swift */,
-				E1F8B79620732AC6007EB119 /* ViewController.swift */,
 				E1F8B79820732AC6007EB119 /* Main.storyboard */,
+				E1BF4C01208ED72F00BC76B4 /* GoogleService-Info.plist */,
 				E1F8B79E20732AC6007EB119 /* Assets.xcassets */,
 				E1F8B7A020732AC6007EB119 /* LaunchScreen.storyboard */,
 				E1F8B7A320732AC6007EB119 /* Info.plist */,
@@ -76,8 +104,10 @@
 				E1D521A82085523500C7C5BB /* GameViewController.swift */,
 				E1CECFC5208D1050006647B5 /* HomeScreenViewController.swift */,
 				E1CECFC7208D1788006647B5 /* LevelCellCollectionViewCell.swift */,
-				E1CECFC9208D2A1B006647B5 /* Crosswords.plist */,
-				E1CECFCB208D2AE8006647B5 /* CrosswordLevel1.swift */,
+				E1CECFCB208D2AE8006647B5 /* CrosswordLevel.swift */,
+				E1006BCA208D9AE40086C579 /* Word.swift */,
+				E1597E4A2095097000F17624 /* UserData.swift */,
+				E1597E4C20950A2F00F17624 /* UserData.plist */,
 			);
 			path = Crossword;
 			sourceTree = "<group>";
@@ -89,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1F8B7A620732AC6007EB119 /* Build configuration list for PBXNativeTarget "Crossword" */;
 			buildPhases = (
+				26874A9B3EFE9092494EC6A4 /* [CP] Check Pods Manifest.lock */,
 				E1F8B78D20732AC5007EB119 /* Sources */,
 				E1F8B78E20732AC5007EB119 /* Frameworks */,
 				E1F8B78F20732AC5007EB119 /* Resources */,
+				5ADEDEE4D78CEBA80612BD57 /* [CP] Embed Pods Frameworks */,
+				A48500CAF64E94B377A3C598 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,12 +176,73 @@
 			files = (
 				E1F8B7A220732AC6007EB119 /* LaunchScreen.storyboard in Resources */,
 				E1F8B79F20732AC6007EB119 /* Assets.xcassets in Resources */,
+				E1BF4C02208ED73000BC76B4 /* GoogleService-Info.plist in Resources */,
+				E1597E4D20950A2F00F17624 /* UserData.plist in Resources */,
 				E1F8B79A20732AC6007EB119 /* Main.storyboard in Resources */,
-				E1CECFCA208D2A1B006647B5 /* Crosswords.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26874A9B3EFE9092494EC6A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crossword-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ADEDEE4D78CEBA80612BD57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Crossword/Pods-Crossword-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crossword/Pods-Crossword-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A48500CAF64E94B377A3C598 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crossword/Pods-Crossword-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1F8B78D20732AC5007EB119 /* Sources */ = {
@@ -156,12 +250,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D521A92085523500C7C5BB /* GameViewController.swift in Sources */,
-				E1F8B79720732AC6007EB119 /* ViewController.swift in Sources */,
+				E1006BCB208D9AE40086C579 /* Word.swift in Sources */,
+				E1597E4B2095097000F17624 /* UserData.swift in Sources */,
 				E1F8B79520732AC6007EB119 /* AppDelegate.swift in Sources */,
 				E1CECFC8208D1788006647B5 /* LevelCellCollectionViewCell.swift in Sources */,
 				E1F8B79D20732AC6007EB119 /* Crossword.xcdatamodeld in Sources */,
 				E1CECFC6208D1050006647B5 /* HomeScreenViewController.swift in Sources */,
-				E1CECFCC208D2AE8006647B5 /* CrosswordLevel1.swift in Sources */,
+				E1CECFCC208D2AE8006647B5 /* CrosswordLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +391,7 @@
 		};
 		E1F8B7A720732AC6007EB119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7DC5D31CCCA1534719827C /* Pods-Crossword.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +407,7 @@
 		};
 		E1F8B7A820732AC6007EB119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDDDC0A5BCD1C3C3C00A12E1 /* Pods-Crossword.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
