@@ -8,6 +8,25 @@
 
 import UIKit
 
+struct userLevelData:Codable {
+    var level: String
+    var isComplete: Bool
+    var userData: [String]
+    
+    init(level: String, isComplete: Bool, userData: [String]){
+        self.level = level
+        self.isComplete = isComplete
+        self.userData = userData
+        for index in 0..<userData.count {
+            if userData[index] != "-" {
+                self.userData[index] = " "
+            }
+        }
+        
+        
+    }
+   
+}
 
 class GameViewController: UIViewController {
     //MARK: UIButtons
@@ -21,13 +40,26 @@ class GameViewController: UIViewController {
     var levelData = CrosswordLevel()
     var isHorizontal = true
     var hintList = [Word]()
-    var userG: Dictionary = [Int : String]()
+    var userGuesses = userLevelData(level: " ", isComplete: false, userData: [])
     
     
     
     //MARK: Load Data
     override func viewDidLoad() {
-        loadCrossword()
+        if let data = UserDefaults.standard.value(forKey: levelData.level) as? Data {
+            userGuesses = try! PropertyListDecoder().decode(userLevelData.self , from: data)
+            print(userGuesses)
+            
+            loadCrossword()
+        } else {
+            userGuesses = userLevelData(level: levelData.level, isComplete: false, userData: levelData.crosswordData)
+            print("else: \(userGuesses)")
+            UserDefaults.standard.set(try? PropertyListEncoder().encode(userGuesses), forKey: levelData.level)
+            loadCrossword()
+        }
+//        userGuesses = userLevelData(level: levelData.level, isComplete: false, userData: levelData.crosswordData)
+//        UserDefaults.standard.set(try? PropertyListEncoder().encode(userGuesses), forKey: levelData.level)
+
         loadHints()
         styleKeyboard()
         tapGesture.numberOfTapsRequired = 2
@@ -39,6 +71,8 @@ class GameViewController: UIViewController {
         
         if self.isMovingFromParentViewController {
             print("leaving view")
+            savePuzzle()
+            UserDefaults.standard.set(try? PropertyListEncoder().encode(userGuesses), forKey: levelData.level)
         }
     }
     
@@ -69,7 +103,7 @@ class GameViewController: UIViewController {
         for button in crosswordButton {
             let buttonValue = button.titleLabel?.text
             
-            if levelData.dataSet[button.tag] != buttonValue && buttonValue != " " {
+            if levelData.crosswordData[button.tag] != buttonValue && buttonValue != " " {
                 print("invalid input \(describing: buttonValue)")
                 isSolved = false
             } else {
@@ -78,6 +112,7 @@ class GameViewController: UIViewController {
         }
         if isSolved {
             print("CONGRATS YOU Solved the Puzzle!")
+            userGuesses.isComplete = true
         } else {
             print("Sorry try again")
         }
@@ -164,20 +199,16 @@ class GameViewController: UIViewController {
     
     
     func loadCrossword() {
-        
-        //var userCrosswordGuesses = levelData.dataSet
-        
-        
-        
+    
         for button in crosswordButton {
             
             
             if levelData.crosswordData[button.tag] != "-" {
                 
-                    
                 
-                //button.setTitle(levelData.crosswordData[button.tag], for: .normal)
-                button.setTitle(" ", for: .normal)
+                
+                button.setTitle(userGuesses.userData[button.tag], for: .normal)
+                button.setTitleColor(UIColor.black, for: .normal)
                 button.backgroundColor = UIColor.white
                 button.layer.borderWidth = 1
                 button.layer.borderColor = UIColor.black.cgColor
@@ -223,7 +254,10 @@ class GameViewController: UIViewController {
     }
     
     func savePuzzle() {
-        
+        for button in crosswordButton {
+            let buttonValue = button.titleLabel?.text
+            userGuesses.userData[button.tag] = buttonValue!
+        }
     }
     
 }

@@ -10,7 +10,6 @@
 		A0E532929451F121A027308A /* Pods_Crossword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0337D3DB7A4FC54D74FD762B /* Pods_Crossword.framework */; };
 		E1006BCB208D9AE40086C579 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1006BCA208D9AE40086C579 /* Word.swift */; };
 		E1597E4B2095097000F17624 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1597E4A2095097000F17624 /* UserData.swift */; };
-		E1597E4D20950A2F00F17624 /* UserData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1597E4C20950A2F00F17624 /* UserData.plist */; };
 		E1BF4C02208ED73000BC76B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1BF4C01208ED72F00BC76B4 /* GoogleService-Info.plist */; };
 		E1CECFC6208D1050006647B5 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CECFC5208D1050006647B5 /* HomeScreenViewController.swift */; };
 		E1CECFC8208D1788006647B5 /* LevelCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CECFC7208D1788006647B5 /* LevelCellCollectionViewCell.swift */; };
@@ -29,7 +28,6 @@
 		DDDDC0A5BCD1C3C3C00A12E1 /* Pods-Crossword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crossword.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crossword/Pods-Crossword.release.xcconfig"; sourceTree = "<group>"; };
 		E1006BCA208D9AE40086C579 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		E1597E4A2095097000F17624 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		E1597E4C20950A2F00F17624 /* UserData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserData.plist; sourceTree = "<group>"; };
 		E1BF4C01208ED72F00BC76B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1CECFC5208D1050006647B5 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		E1CECFC7208D1788006647B5 /* LevelCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCellCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				E1CECFCB208D2AE8006647B5 /* CrosswordLevel.swift */,
 				E1006BCA208D9AE40086C579 /* Word.swift */,
 				E1597E4A2095097000F17624 /* UserData.swift */,
-				E1597E4C20950A2F00F17624 /* UserData.plist */,
 			);
 			path = Crossword;
 			sourceTree = "<group>";
@@ -177,7 +174,6 @@
 				E1F8B7A220732AC6007EB119 /* LaunchScreen.storyboard in Resources */,
 				E1F8B79F20732AC6007EB119 /* Assets.xcassets in Resources */,
 				E1BF4C02208ED73000BC76B4 /* GoogleService-Info.plist in Resources */,
-				E1597E4D20950A2F00F17624 /* UserData.plist in Resources */,
 				E1F8B79A20732AC6007EB119 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
