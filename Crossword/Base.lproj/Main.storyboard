@@ -2893,6 +2893,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="LevelNumber" destination="qIp-6o-5co" id="Ne2-ba-2lM"/>
                         <outlet property="hintLabel" destination="w1U-vj-TCw" id="KB2-ba-bkz"/>
                         <outlet property="tapGesture" destination="KTQ-42-Zac" id="ktz-Hx-h92"/>
                         <outletCollection property="crosswordButton" destination="W51-Te-7sI" collectionClass="NSMutableArray" id="pNc-YZ-yaa"/>

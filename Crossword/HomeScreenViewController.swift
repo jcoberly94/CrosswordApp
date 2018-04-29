@@ -26,14 +26,18 @@ class HomeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "loadPuzzle" {
+            let index = sender as! UIButton
+            
+            
+            print("INDEX: \(index)")
             if let vc = segue.destination as? GameViewController {
                 print("segue")
-                vc.levelData = crosswordLevels[0]
+                
+                vc.levelData = crosswordLevels[index.tag]
                 
             }
         }
     }
-    
     
     func loadPuzzles() {
         
@@ -49,10 +53,6 @@ class HomeViewController: UIViewController {
             }
         })
     }
-  
-    
-    
-    
     
 }
 
@@ -72,6 +72,9 @@ extension HomeViewController : UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LevelCell", for: indexPath) as! LevelCellCollectionViewCell
     
         cell.levelNumber.text = crosswordLevels[indexPath.row].level
+        cell.levelicon.tag = Int(crosswordLevels[indexPath.row].level)! - 1
+       
+        
         
         return cell
     }

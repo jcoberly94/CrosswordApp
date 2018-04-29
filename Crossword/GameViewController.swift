@@ -22,10 +22,7 @@ struct userLevelData:Codable {
                 self.userData[index] = " "
             }
         }
-        
-        
     }
-   
 }
 
 class GameViewController: UIViewController {
@@ -34,6 +31,7 @@ class GameViewController: UIViewController {
     @IBOutlet var crosswordButton: [UIButton]!
     @IBOutlet var keyboardButtons: [UIButton]!
     @IBOutlet var tapGesture: UITapGestureRecognizer!
+    @IBOutlet weak var LevelNumber: UILabel!
     
     //MARK: Global Variables
     var selectedButton = -1
@@ -41,6 +39,7 @@ class GameViewController: UIViewController {
     var isHorizontal = true
     var hintList = [Word]()
     var userGuesses = userLevelData(level: " ", isComplete: false, userData: [])
+    var markers = [Int]()
     
     
     
@@ -57,9 +56,8 @@ class GameViewController: UIViewController {
             UserDefaults.standard.set(try? PropertyListEncoder().encode(userGuesses), forKey: levelData.level)
             loadCrossword()
         }
-//        userGuesses = userLevelData(level: levelData.level, isComplete: false, userData: levelData.crosswordData)
-//        UserDefaults.standard.set(try? PropertyListEncoder().encode(userGuesses), forKey: levelData.level)
 
+        loadMarkers()
         loadHints()
         styleKeyboard()
         tapGesture.numberOfTapsRequired = 2
@@ -199,13 +197,11 @@ class GameViewController: UIViewController {
     
     
     func loadCrossword() {
+        LevelNumber.text = "Level \(levelData.level)"
     
         for button in crosswordButton {
             
-            
             if levelData.crosswordData[button.tag] != "-" {
-                
-                
                 
                 button.setTitle(userGuesses.userData[button.tag], for: .normal)
                 button.setTitleColor(UIColor.black, for: .normal)
@@ -220,7 +216,6 @@ class GameViewController: UIViewController {
                 button.layer.borderWidth = 1
                 button.layer.borderColor = UIColor.black.cgColor
             }
-            
         }
     }
     
@@ -251,6 +246,25 @@ class GameViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func loadMarkers() {
+        
+            for word in levelData.words {
+                let row = word.row
+                let column = word.column
+                
+                let index = Int(row)! * 13 + Int(column)!
+                if (word.direction == "horizontal") {
+                    crosswordButton[index].setBackgroundImage(UIImage(named: "\(word.row).png"), for: UIControlState.normal)
+                } else {
+                    crosswordButton[index].setBackgroundImage(UIImage(named: "\(word.column).png"), for: UIControlState.normal)
+                }
+                
+            }
+        
+        
+        
     }
     
     func savePuzzle() {
