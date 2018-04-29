@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FCAlertView
 
 struct userLevelData:Codable {
     var level: String
@@ -43,11 +44,12 @@ class GameViewController: UIViewController {
     
     
     
+    
     //MARK: Load Data
     override func viewDidLoad() {
         if let data = UserDefaults.standard.value(forKey: levelData.level) as? Data {
             userGuesses = try! PropertyListDecoder().decode(userLevelData.self , from: data)
-            print(userGuesses)
+            //print(userGuesses)
             
             loadCrossword()
         } else {
@@ -71,6 +73,7 @@ class GameViewController: UIViewController {
             print("leaving view")
             savePuzzle()
             UserDefaults.standard.set(try? PropertyListEncoder().encode(userGuesses), forKey: levelData.level)
+            print(userGuesses)
         }
     }
     
@@ -99,20 +102,30 @@ class GameViewController: UIViewController {
         var isSolved = true
         
         for button in crosswordButton {
-            let buttonValue = button.titleLabel?.text
+            if let buttonValue = button.titleLabel?.text {
             
-            if levelData.crosswordData[button.tag] != buttonValue && buttonValue != " " {
-                print("invalid input \(describing: buttonValue)")
+            if levelData.crosswordData[button.tag] != buttonValue.lowercased() && levelData.crosswordData[button.tag] != "-"{
+                print("Expected: \(levelData.crosswordData[button.tag])")
+                print("Received: \(buttonValue.lowercased())")
+                button.layer.borderColor = UIColor.red.cgColor
                 isSolved = false
-            } else {
-                print("valid input \(describing: buttonValue)")
             }
         }
+        }
+        
         if isSolved {
             print("CONGRATS YOU Solved the Puzzle!")
+            let alert = FCAlertView()
+            alert.cornerRadius = 4
+            alert.dismissOnOutsideTouch = true
+            alert.showAlert(inView: self, withTitle: "Congrats!", withSubtitle: "You solved the puzzle", withCustomImage: nil, withDoneButtonTitle: "Done", andButtons: nil)
             userGuesses.isComplete = true
         } else {
             print("Sorry try again")
+            let alert = FCAlertView()
+            alert.cornerRadius = 4
+            alert.dismissOnOutsideTouch = true
+            alert.showAlert(inView: self, withTitle: "Sorry! Try Again", withSubtitle: "Some words are not correct", withCustomImage: nil, withDoneButtonTitle: "Done", andButtons: nil)
         }
     }
     

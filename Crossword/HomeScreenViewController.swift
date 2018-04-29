@@ -74,7 +74,13 @@ extension HomeViewController : UICollectionViewDataSource {
         cell.levelNumber.text = crosswordLevels[indexPath.row].level
         cell.levelicon.tag = Int(crosswordLevels[indexPath.row].level)! - 1
        
-        
+        if let data = UserDefaults.standard.value(forKey: String(indexPath.row + 1)) as? Data {
+            let userGuesses = try! PropertyListDecoder().decode(userLevelData.self , from: data)
+            if userGuesses.isComplete {
+                cell.completed.isHidden = false
+            }
+        }
+            
         
         return cell
     }

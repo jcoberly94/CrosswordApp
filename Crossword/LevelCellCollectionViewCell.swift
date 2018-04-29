@@ -12,7 +12,7 @@ class LevelCellCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var levelicon: UIButton!
     @IBOutlet weak var levelNumber: UILabel!
-    
+    @IBOutlet weak var completed: UIImageView!
     
     
     
