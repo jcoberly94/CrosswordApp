@@ -70,7 +70,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="def-1M-kPr"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1Q8-kV-2kF"/>
+                    <navigationItem key="navigationItem" id="1Q8-kV-2kF">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="dpb-Ji-AaU">
+                            <connections>
+                                <segue destination="7N1-fy-1Ro" kind="show" id="KrQ-iw-N2R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="lgh-o7-vtT" id="5lm-r3-HOm"/>
                     </connections>
@@ -310,6 +316,9 @@
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="5" minY="9" maxX="5" maxY="9"/>
                                                         <state key="normal" image="gear"/>
+                                                        <connections>
+                                                            <segue destination="7N1-fy-1Ro" kind="show" id="uGY-RT-r06"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="90" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-vY-cp6">
                                                         <rect key="frame" x="40" y="0.0" width="36" height="44.5"/>
@@ -2864,13 +2873,6 @@
                                     <outletCollection property="gestureRecognizers" destination="KTQ-42-Zac" appends="YES" id="dUO-07-ypR"/>
                                 </connections>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIp-6o-5co">
-                                <rect key="frame" x="166" y="75" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ya-pi-Hws">
                                 <rect key="frame" x="309" y="70" width="42" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2882,6 +2884,13 @@
                                     <action selector="solveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IWZ-PH-MrV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIp-6o-5co">
+                                <rect key="frame" x="116" y="76" width="142" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -3109,6 +3118,42 @@
             </objects>
             <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
         </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="SUk-p4-aSu">
+            <objects>
+                <viewController title="SettingsViewController" id="7N1-fy-1Ro" customClass="SettingsViewController" customModule="Crossword" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D7w-hJ-tw3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOT-wL-Zuj">
+                                <rect key="frame" x="164" y="139" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="music:" destination="DWF-ly-nrp" eventType="valueChanged" id="aYi-Fv-jcj"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfL-Rx-bGp">
+                                <rect key="frame" x="86" y="144" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qRR-wh-FaI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8VV-Ig-vlW"/>
+                    <connections>
+                        <outlet property="music" destination="yOT-wL-Zuj" id="GtT-vc-5GM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Knr-AY-HYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DWF-ly-nrp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="923"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="jnn-hE-gbv">
             <objects>
@@ -3134,4 +3179,7 @@
         <image name="completed" width="300" height="300"/>
         <image name="gear" width="64" height="64"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uGY-RT-r06"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import SpriteKit
+let soundState = "SoundState"
+
+class UserData {
+    init() {}
+    
+    func setSounds(_ state: Bool) {
+        UserDefaults.standard.set(state, forKey: soundState)
+        UserDefaults.standard.synchronize()
+    }
+    
+    func getSound() -> Bool {
+        return UserDefaults.standard.bool(forKey: soundState)
+    }
+}

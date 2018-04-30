@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A0E532929451F121A027308A /* Pods_Crossword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0337D3DB7A4FC54D74FD762B /* Pods_Crossword.framework */; };
 		E1006BCB208D9AE40086C579 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1006BCA208D9AE40086C579 /* Word.swift */; };
+		E14DD56420969EEF000CAC74 /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E14DD56320969EEF000CAC74 /* BackgroundMusic.mp3 */; };
+		E14DD5662096A3CB000CAC74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14DD5652096A3CB000CAC74 /* SettingsViewController.swift */; };
 		E1597E4B2095097000F17624 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1597E4A2095097000F17624 /* UserData.swift */; };
 		E1BF4C02208ED73000BC76B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1BF4C01208ED72F00BC76B4 /* GoogleService-Info.plist */; };
 		E1CECFC6208D1050006647B5 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CECFC5208D1050006647B5 /* HomeScreenViewController.swift */; };
@@ -27,6 +29,8 @@
 		5F7DC5D31CCCA1534719827C /* Pods-Crossword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crossword.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crossword/Pods-Crossword.debug.xcconfig"; sourceTree = "<group>"; };
 		DDDDC0A5BCD1C3C3C00A12E1 /* Pods-Crossword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crossword.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crossword/Pods-Crossword.release.xcconfig"; sourceTree = "<group>"; };
 		E1006BCA208D9AE40086C579 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		E14DD56320969EEF000CAC74 /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
+		E14DD5652096A3CB000CAC74 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E1597E4A2095097000F17624 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		E1BF4C01208ED72F00BC76B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1CECFC5208D1050006647B5 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +108,9 @@
 				E1CECFC7208D1788006647B5 /* LevelCellCollectionViewCell.swift */,
 				E1CECFCB208D2AE8006647B5 /* CrosswordLevel.swift */,
 				E1006BCA208D9AE40086C579 /* Word.swift */,
+				E14DD56320969EEF000CAC74 /* BackgroundMusic.mp3 */,
 				E1597E4A2095097000F17624 /* UserData.swift */,
+				E14DD5652096A3CB000CAC74 /* SettingsViewController.swift */,
 			);
 			path = Crossword;
 			sourceTree = "<group>";
@@ -172,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1F8B7A220732AC6007EB119 /* LaunchScreen.storyboard in Resources */,
+				E14DD56420969EEF000CAC74 /* BackgroundMusic.mp3 in Resources */,
 				E1F8B79F20732AC6007EB119 /* Assets.xcassets in Resources */,
 				E1BF4C02208ED73000BC76B4 /* GoogleService-Info.plist in Resources */,
 				E1F8B79A20732AC6007EB119 /* Main.storyboard in Resources */,
@@ -255,6 +262,7 @@
 				E1F8B79D20732AC6007EB119 /* Crossword.xcdatamodeld in Sources */,
 				E1CECFC6208D1050006647B5 /* HomeScreenViewController.swift in Sources */,
 				E1CECFCC208D2AE8006647B5 /* CrosswordLevel.swift in Sources */,
+				E14DD5662096A3CB000CAC74 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

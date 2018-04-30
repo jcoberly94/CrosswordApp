@@ -54,7 +54,7 @@ class GameViewController: UIViewController {
             loadCrossword()
         } else {
             userGuesses = userLevelData(level: levelData.level, isComplete: false, userData: levelData.crosswordData)
-            print("else: \(userGuesses)")
+            //print("else: \(userGuesses)")
             UserDefaults.standard.set(try? PropertyListEncoder().encode(userGuesses), forKey: levelData.level)
             loadCrossword()
         }
